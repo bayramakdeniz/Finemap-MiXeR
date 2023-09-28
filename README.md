@@ -22,26 +22,17 @@ Step by Step guide how to run Finemap Mixer
 
 Download and unzip the repo. This will be our working directory in Matlab.
 
-## Step 2. 
-This step is optional and you can skip if you do not want to create files for Susie and Finemap. For this case you need to set "data_creator=0"
+## Step 2.
 
-Create empthy folders under working directory as finemap/1causal_hapgen/ .... finemap/5causal_hapgen/  and             susie/1causal_hapgen/ ..... susie/5causal_hapgen/ folders. These 10 folders will be used to run the same analysis for SuSie and Finemap
+Download plink files generated using hapgen2 tool from [here](https://github.com/comorment/containers/tree/main/reference/hapgen) and move these files to your working directory
 
 ## Step 3.
 
-Run hapgenRun_clean.m
+To run the analysis using this genomic data (with various scenarios) run
 
-##
-Once the experiments have been done, it is possible to run the same analysis using exactly same input data with Finemap and SuSie
-
-For Susie, you may directly run ``susieFromMixerData.R`` or ``susieFromRealData.R``
-
-ToDo: Add More details and Finemapv1.4
 
 # How to run the Finemap MiXeR with Singularity container
 
-
- 
  If you do not have MATLAB licence, you can still run Finemap-MiXeR using Matlab Runtime and Singularity Container. Our method has been compiled using Matlab 2018B compiler  and  we can run this compiled application using Matlab Runtime that is hosted in a singularity container. All this process has already done and if you follow the following steps you can run Finemap-MiXeR without using MATLAB. Assuming that singularity container is available on your machine, you can also follow the steps below to run the analysis
 
 ## Step 1
