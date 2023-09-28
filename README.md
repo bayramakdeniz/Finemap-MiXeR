@@ -8,7 +8,7 @@ Required inputs:
 
 1) z-scores of the study 
 
-2) A matrix (correlation matrix of SNPs weighted by Heterozygozity, $ a_{ij}$ ($ a_{ij}=\sum_{i=1}^{M} \sqrt{N \hat{H}_{i}} \hat{r}_{j i} $)
+2) A matrix (correlation matrix of SNPs weighted by Heterozygozity, ( ```math a_{ij}=\sum_{i=1}^{M} \sqrt{N \hat{H}_{i}} \hat{r}_{j i} $ ```)
 3)
 4)   for details see[here](https://www.biorxiv.org/content/10.1101/2022.11.30.518509v2.full.pdf))
 
