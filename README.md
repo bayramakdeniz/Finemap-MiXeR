@@ -36,7 +36,7 @@ Download plink files generated using hapgen2 tool from [here](https://github.com
 To run the analysis using this genomic data (with various scenarios) run ``HapgenFinemapGithub.m``
 
 
-# How to run the Finemap MiXeR with Singularity container
+# How to run the Finemap-MiXeR with Singularity container
 
  If you do not have MATLAB licence, you can still run Finemap-MiXeR using Matlab Runtime and Singularity Container. Our method has been compiled using Matlab 2018B compiler  and  we can run this compiled application using Matlab Runtime that is hosted in a singularity container. All this process has already done and if you follow the following steps you can run Finemap-MiXeR without using MATLAB. Assuming that singularity container is available on your machine, you can also follow the steps below to run the analysis
 
