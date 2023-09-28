@@ -28,7 +28,7 @@ Download plink files generated using hapgen2 tool from [here](https://github.com
 
 ## Step 3.
 
-To run the analysis using this genomic data (with various scenarios) run "HapgenFinemapGithub.m"
+To run the analysis using this genomic data (with various scenarios) run ``HapgenFinemapGithub.m``
 
 
 # How to run the Finemap MiXeR with Singularity container
