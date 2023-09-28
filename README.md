@@ -8,11 +8,9 @@ Required inputs:
 
 1) z-scores of the study 
 
-2) A matrix (correlation matrix of SNPs weighted by Heterozygozity, ( \$ a_{ij}=\sum_{i=1}^{M} \sqrt{N \hat{H}_{i}} \hat{r}_{j i} $)
-3)
-4)   for details see[here](https://www.biorxiv.org/content/10.1101/2022.11.30.518509v2.full.pdf))
+2) A matrix (correlation matrix of SNPs weighted by Heterozygozity, ( $$ a_{ij}=\sum_{i=1}^{M} \sqrt{N \hat{H}_{i}} \hat{r}_{j i} $$).   For details see[here](https://www.biorxiv.org/content/10.1101/2022.11.30.518509v2.full.pdf))
 
-Note: Instead of weighted correlation matrix A, correlation matrix itself can also be used but not guaranteed for 
+Note: Instead of the weighted correlation matrix A, correlation matrix itself (R) can also be used but is not guaranteed for the optimal results.
 
 # =================================
 # How to run the analysis
@@ -40,16 +38,14 @@ For Susie, you may directly run ``susieFromMixerData.R`` or ``susieFromRealData.
 
 ToDo: Add More details and Finemapv1.4
 
-# How to run the analysis with Singularity container
+# How to run the Finemap MiXeR with Singularity container
 
-ToDo: Update
 
-It may not feasible to run this analysis directly on a HPC due to Matlab Licence issue. In those cases we can use Matlab Runtime if you have compiled your Matlab code as an application as expained in detail [here](https://github.com/comorment/matlabruntime). To do this;
+ 
+ If you do not have MATLAB licence, you can still run Finemap-MiXeR using Matlab Runtime and Singularity Container. Our method has been compiled using Matlab 2018B compiler  and  we can run this compiled application using Matlab Runtime that is hosted in a singularity container. All this process has already done and if you follow the following steps you can run Finemap-MiXeR without using MATLAB.
 
-## Step 1 Download ``matlabruntime.sif``,  placed in matlabruntime folder from [here](https://drive.google.com/drive/folders/1mfxZJ-7A-4lDlCkarUCxEf2hBIxQGO69?usp=sharing)
+## Step 1 Download ``matlabruntime.sif``,  container from [here](https://drive.google.com/file/d/1tJ14nauquF_GZg10gOB1Mj2EIsXXYbLC/view?usp=drive_link)
 
 ## Step 2. Download the compiled application of our analysis from here [here](https://drive.google.com/file/d/1CCLCR2FJX-feHxo9uHHz-6YDpecVGSCJ/view?usp=sharing) and unzip it. This folder will be our working directory
-
-## Step 3. Move matlabruntime.sif and plink data you want to analyze to the working directory. In this case the name of the plink file is ``chr21``
 
 ## Step 4 Run the container as  `singularity exec -B $PWD:/execute  matlabruntime.sif /execute/hapgenruntime 'chr21' `
