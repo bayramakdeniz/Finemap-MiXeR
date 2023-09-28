@@ -42,10 +42,21 @@ ToDo: Add More details and Finemapv1.4
 
 
  
- If you do not have MATLAB licence, you can still run Finemap-MiXeR using Matlab Runtime and Singularity Container. Our method has been compiled using Matlab 2018B compiler  and  we can run this compiled application using Matlab Runtime that is hosted in a singularity container. All this process has already done and if you follow the following steps you can run Finemap-MiXeR without using MATLAB.
+ If you do not have MATLAB licence, you can still run Finemap-MiXeR using Matlab Runtime and Singularity Container. Our method has been compiled using Matlab 2018B compiler  and  we can run this compiled application using Matlab Runtime that is hosted in a singularity container. All this process has already done and if you follow the following steps you can run Finemap-MiXeR without using MATLAB. Assuming that singularity container is available on your machine, you can also follow the steps below to run the analysis
 
-## Step 1 Download ``matlabruntime.sif``,  container from [here](https://drive.google.com/file/d/1tJ14nauquF_GZg10gOB1Mj2EIsXXYbLC/view?usp=drive_link)
+## Step 1
+Download ``matlabruntime.sif``,  container from [here](https://drive.google.com/file/d/1tJ14nauquF_GZg10gOB1Mj2EIsXXYbLC/view?usp=drive_link)
 
-## Step 2. Download the compiled application of our analysis from here [here](https://drive.google.com/file/d/1CCLCR2FJX-feHxo9uHHz-6YDpecVGSCJ/view?usp=sharing) and unzip it. This folder will be our working directory
+## Step 2. 
+Download the compiled application of our analysis from here [here](https://drive.google.com/file/d/1SoLpSclxm5NsGSEz2nWfN0CawuicWid7/view?usp=sharing).
 
-## Step 4 Run the container as  `singularity exec -B $PWD:/execute  matlabruntime.sif /execute/hapgenruntime 'chr21' `
+## Step 3. 
+Prepare z scores as a vector in .mat format (glmt.mat) and A matrix (a.mat)
+
+## Step 4 
+
+Move container, application and corresponding input (.mat) files in the same directory, you can run the analysis as
+
+Run the container as  `singularity exec -B $PWD:/execute  matlabruntime.sif /execute/hapgenruntime 'a.mat' 'glmt.mat' `
+
+Then the output is created as "ResultsFinemapMixer.mat" and it includes the probability of being causal (probs.mat), effect size of each SNP (effect_size.mat) and its variance (variance_effect.mat)
