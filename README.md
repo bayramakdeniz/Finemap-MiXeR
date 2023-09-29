@@ -51,7 +51,7 @@ Prepare z scores as a vector in .mat format (glmt.mat) and A matrix (a.mat)
 
 ## Step 4 
 
-Move container, application and corresponding input (.mat) files in the same directory, you can run the analysis as
+Assuming you move the container, application and corresponding input (.mat) files in the same directory, you can run the analysis as
 
 Run the container as  `singularity exec -B $PWD:/execute  matlabruntime.sif /execute/hapgenruntime 'a.mat' 'glmt.mat' `
 
