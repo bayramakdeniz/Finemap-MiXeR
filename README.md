@@ -44,10 +44,10 @@ To run the analysis using this genomic data (with various scenarios) run ``Hapge
 Download ``matlabruntime.sif``,  container from [here](https://drive.google.com/file/d/1tJ14nauquF_GZg10gOB1Mj2EIsXXYbLC/view?usp=drive_link)
 
 ## Step 2. 
-Download the compiled application of our analysis from here [here](https://drive.google.com/file/d/1SoLpSclxm5NsGSEz2nWfN0CawuicWid7/view?usp=sharing).
+Download the compiled application of our Finemap-MiXeR tool from here [here](https://drive.google.com/file/d/1SoLpSclxm5NsGSEz2nWfN0CawuicWid7/view?usp=sharing).
 
 ## Step 3. 
-Prepare z scores as a vector in .mat format (glmt.mat) and A matrix (a.mat)
+Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat)
 
 ## Step 4 
 
