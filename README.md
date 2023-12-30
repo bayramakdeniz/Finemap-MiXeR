@@ -74,6 +74,6 @@ Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat)
 
 Assuming you move the container, application and corresponding input (.mat) files in the same directory, you can run the analysis as
 
-Run the container as  `docker run -it -v $PWD:/exacute matlabruntime2018 ./execute/FinemapMiXeRv09 'a.mat' 'glmt.mat' `
+Run the container as  `docker run -v $PWD:/exacute matlabruntime2018 ./execute/FinemapMiXeRv09 'a.mat' 'glmt.mat' `
 
 Then the output is created as "ResultsFinemapMixer.mat" and it includes the probability of being causal (probs.mat), effect size of each SNP (effect_size.mat) and its variance (variance_effect.mat)
