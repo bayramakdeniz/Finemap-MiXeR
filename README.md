@@ -59,7 +59,7 @@ Then the output is created as "ResultsFinemapMixer.mat" and it includes the prob
 
 # How to run the Finemap-MiXeR with Docker container
 
- If you do not have MATLAB licence, you can still run Finemap-MiXeR using Matlab Runtime and Docker Container. Our method has been compiled using Matlab 2018B compiler  and  we can run this compiled application using Matlab Runtime that is hosted in a singularity container. All this process has already done and if you follow the following steps you can run Finemap-MiXeR without using MATLAB. Assuming that Docker container is available on your machine, you can also follow the steps below to run the analysis
+ If you do not have MATLAB licence, you can still run Finemap-MiXeR using Matlab Runtime and Docker Container. Our method has been compiled using Matlab 2018B compiler  and  we can run this compiled application using Matlab Runtime that is hosted in a Docker container. All this process has already done and if you follow the following steps you can run Finemap-MiXeR without using MATLAB. Assuming that Docker container is available on your machine, you can also follow the steps below to run the analysis
 
 ## Step 1
 Get matlab runtime container from DockerHub as  `docker pull bayramalex/matlabruntime2018`
