@@ -37,9 +37,11 @@ Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat)
 
 Assuming you move the container, application and corresponding input (.mat) files in the same directory, you can run the analysis as
 
-Run the container as  `singularity exec -B $PWD:/execute  matlabruntime.sif /execute/FinemapMiXeRv09 'a.mat' 'glmt.mat' `
+Run the container as (for normal Finemap-MiXeR)  `singularity exec -B $PWD:/execute  matlabruntime.sif /execute/FinemapMiXeRvtheta_csV1 'a.mat' 'glmt.mat' 'normal'
 
-Then the output is created as "ResultsFinemapMixer.mat" and it includes the probability of being causal (probs.mat), effect size of each SNP (effect_size.mat) and its variance (variance_effect.mat)
+Run the container as (for Finemap-MiXeR PCA, preferably for bigger loci)  `singularity exec -B $PWD:/execute  matlabruntime.sif /execute/FinemapMiXeRvtheta_csV1 'a.mat' 'glmt.mat' 'pca'
+
+Then the output is created as "ResultsFinemapMixer.mat" and it includes the probability of being causal (probs.mat), effect size of each SNP (effect_size.mat) their variance variance (variance_effect.mat) and creidble sets (credible_sets.mat)
 
 # How to run the Finemap-MiXeR with Docker container
 
