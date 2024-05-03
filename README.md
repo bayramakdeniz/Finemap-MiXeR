@@ -18,22 +18,6 @@ where  H_i: samples heterozygosity of SNP i, N:sample size, r_{i j} correlation 
 Note: Instead of the weighted correlation matrix A, correlation matrix itself (R) can also be used but is not guaranteed for the optimal results.
 
 # =================================
-# How to run the analysis
-
-Step by Step guide how to run Finemap Mixer
-
-
-## Step 1. 
-
-Download and unzip the repo. This will be our working directory in Matlab.
-
-## Step 2.
-
-Download plink files generated using hapgen2 tool from [here](https://github.com/comorment/containers/tree/main/reference/hapgen) and move these files to your working directory
-
-## Step 3.
-
-To run the analysis using this genomic data (with various scenarios) run ``HapgenFinemapGithub.m``
 
 
 # How to run the Finemap-MiXeR with Singularity container
