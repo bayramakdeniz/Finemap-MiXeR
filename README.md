@@ -49,7 +49,7 @@ Then the output is created as "ResultsFinemapMixer.mat" and it includes the prob
 Get matlab runtime container from DockerHub as  `docker pull bayramalex/matlabruntime2018`
 
 ## Step 2. 
-Download the compiled application of our Finemap-MiXeR tool (current name is FinemapMiXeRv09 ) from here [here](https://drive.google.com/file/d/1SoLpSclxm5NsGSEz2nWfN0CawuicWid7/view?usp=sharing).
+Download the compiled application of our Finemap-MiXeR tool (current name is FinemapMiXeRv09 ) from here [here](https://drive.google.com/file/d/16LFuHWyU_L-re-uS_Udq8eGupG5lYJ6N/view?usp=sharing).
 
 ## Step 3. 
 Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat). For R users to create .mat files see [here](https://www.rdocumentation.org/packages/R.matlab/versions/3.7.0/topics/writeMat)
