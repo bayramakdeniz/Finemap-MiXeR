@@ -37,7 +37,7 @@ Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat)
 
 Assuming you move the container, application and corresponding input (.mat) files in the same directory, you can run the analysis as
 
-Run the container as (for normal Finemap-MiXeR)  `singularity exec -B $PWD:/execute  matlabruntime.sif /execute/FinemapMiXeRvtheta_csV1 'a.mat' 'glmt.mat' 'normal' `
+Run the container as (for Finemap-MiXeR)  `singularity exec -B $PWD:/execute  matlabruntime.sif /execute/FinemapMiXeRvtheta_csV1 'a.mat' 'glmt.mat' 'normal' `
 
 Run the container as (for Finemap-MiXeR PCA, preferably for bigger loci)  `singularity exec -B $PWD:/execute  matlabruntime.sif /execute/FinemapMiXeRvtheta_csV1 'a.mat' 'glmt.mat' 'pca' `
 
@@ -51,7 +51,7 @@ Then the output is created as "ResultsFinemapMixer.mat" and it includes the prob
 Get matlab runtime container from DockerHub as  `docker pull bayramalex/matlabruntime2018`
 
 ## Step 2. 
-Download the compiled application of our Finemap-MiXeR tool (current name is FinemapMiXeRv09 ) from here [here](https://drive.google.com/file/d/16LFuHWyU_L-re-uS_Udq8eGupG5lYJ6N/view?usp=sharing).
+Download the compiled application of our Finemap-MiXeR tool from here [here](https://drive.google.com/file/d/1SoLpSclxm5NsGSEz2nWfN0CawuicWid7/view?usp=sharing).
 
 ## Step 3. 
 Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat). For R users to create .mat files see [here](https://www.rdocumentation.org/packages/R.matlab/versions/3.7.0/topics/writeMat)
@@ -60,6 +60,8 @@ Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat)
 
 Assuming you move the container, application and corresponding input (.mat) files in the same directory, you can run the analysis as
 
-Run the container as  `docker run -v $PWD:/exacute matlabruntime2018 ./execute/FinemapMiXeRv09 'a.mat' 'glmt.mat' `
+Run the container as (for Finemap-MiXeR)  `docker run -v $PWD:/exacute matlabruntime2018 ./execute/FinemapMiXeRvtheta_csV1 'a.mat' 'glmt.mat' 'normal' `
 
-Then the output is created as "ResultsFinemapMixer.mat" and it includes the probability of being causal (probs.mat), effect size of each SNP (effect_size.mat) and its variance (variance_effect.mat)
+Run the container as (for Finemap-MiXeR PCA, preferably for bigger loci)  `docker run -v $PWD:/exacute matlabruntime2018 ./execute/FinemapMiXeRvtheta_csV1 'a.mat' 'glmt.mat' 'pca' `
+
+Then the output is created as "ResultsFinemapMixer.mat" and it includes the probability of being causal (probs.mat), effect size of each SNP (effect_size.mat) their variance variance (variance_effect.mat) and creidble sets (credible_sets.mat)
