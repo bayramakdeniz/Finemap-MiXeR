@@ -31,7 +31,7 @@ Download ``matlabruntime.sif``,  container from [here](https://drive.google.com/
 Download the compiled application of our Finemap-MiXeR tool from here [here](https://drive.google.com/file/d/16LFuHWyU_L-re-uS_Udq8eGupG5lYJ6N/view?usp=sharing).
 
 ## Step 3. 
-Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat). For R users to create .mat files see [here](https://www.rdocumentation.org/packages/R.matlab/versions/3.7.0/topics/writeMat)
+Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat). For demo analysis, you may use the example files in this repository. (For R users to create .mat files see [here](https://www.rdocumentation.org/packages/R.matlab/versions/3.7.0/topics/writeMat) )
 
 ## Step 4 
 
@@ -54,7 +54,7 @@ Get matlab runtime container from DockerHub as  `docker pull bayramalex/matlabru
 Download the compiled application of our Finemap-MiXeR tool from here [here](https://drive.google.com/file/d/16LFuHWyU_L-re-uS_Udq8eGupG5lYJ6N/view?usp=sharing).
 
 ## Step 3. 
-Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat). For R users to create .mat files see [here](https://www.rdocumentation.org/packages/R.matlab/versions/3.7.0/topics/writeMat)
+Prepare z scores as a vector in .mat format (glmt.mat) and also A matrix (a.mat). For demo analysis, you may use the example files in this repository. (For R users to create .mat files see [here](https://www.rdocumentation.org/packages/R.matlab/versions/3.7.0/topics/writeMat) )
 
 ## Step 4 
 
