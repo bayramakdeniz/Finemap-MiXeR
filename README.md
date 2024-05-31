@@ -15,7 +15,7 @@ Required inputs:
   $$\left( a_{i j} \right) = \left( \sum_{i=1}^n \sqrt{N H_i} r_{i j} \right) $$
 where  H_i: samples heterozygosity of SNP i, N:sample size, r_{i j} correlation coefficient of SNPs i and j     For details see [here](https://www.biorxiv.org/content/10.1101/2022.11.30.518509v2.full.pdf)
 
-Note: Instead of the weighted correlation matrix A, correlation matrix itself (R) can also be used but is not guaranteed for the optimal results.
+Note: Instead of the weighted correlation matrix A, correlation matrix itself (R) can also be used but is not guaranteed to get the optimal results.
 
 # =================================
 
